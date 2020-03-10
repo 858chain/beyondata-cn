@@ -1,3 +1,47 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+## Basic Configuration
+
+baseurl = "/"
+builddrafts = false
+canonifyurls = false
+languageCode = "zh-cn"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "本元数据"
+title = "本元数据科技(南京)有限公司"
+
+theme = "hugo-goa"
+
+## Site Settings
+[params]
+author = "本元数据"
+intro = "即将发布站点，请稍候。。。"
+description = "本元数据科技(南京)有限公司"
+dateformat = "2020, 3"
+
+## Site Meta Settings
+[params.meta]
+description = "专注企业级区块链技术服务商"
+keywords = "区块链,技术服务商,超级账本"
+
+## Social Accounts
+[params.social]
+email = "xiaods@gmail.com"
+
+## Extras
+[params.extra]
+copyright = "© 2020. Beyondata [All Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+poweredby = false
+highlightjs = true
+socialmarkup = true
+toc = true
+displayrssicon = true
+
+## Main Menu
+[[menu.main]]
+    name = "关于"
+    identifier = "about"
+    weight = 200
+    url = "/about/"
