@@ -1,47 +1,86 @@
-## Basic Configuration
-
 baseurl = "/"
-builddrafts = false
-canonifyurls = false
 languageCode = "zh-cn"
-
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-
-author = "本元数据"
 title = "本元数据科技(南京)有限公司"
+theme = "infinity-hugo"
 
-theme = "hugo-goa"
-
-## Site Settings
 [params]
-author = "本元数据"
-intro = "即将发布站点，请稍候。。。"
-description = "本元数据科技(南京)有限公司"
-dateformat = "2020, 3"
 
-## Site Meta Settings
-[params.meta]
-description = "专注企业级区块链技术服务商"
-keywords = "区块链,技术服务商,超级账本"
+# Navigation
+[params.navigation]
+logo = "images/logo.png"
+home = "首页"
+about = "关于"
+service = "服务"
+contact = "联系我们"
 
-## Social Accounts
-[params.social]
-email = "xiaods@gmail.com"
+# Hero Area
+[params.hero]
+enable      = true
+bg          = "images/header-bg.jpg"
+title       = "专注企业级区块链技术的创新与服务"
+subtitle    = "专注开源技术的落地和实践，为中国中小企业的发展提供有效的区块链技术支持和合作。"
+btnText     = "开始"
+countdownYear = "2020"
+countdownMonth = "12"
+countdownDay  = "31"
 
-## Extras
-[params.extra]
-copyright = "© 2020. Beyondata [All Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
-poweredby = false
-highlightjs = true
-socialmarkup = true
-toc = true
-displayrssicon = true
+# About Section
+[params.about]
+enable      = true
+heading     = "我们是谁？"
+description = "国内领先的开源技术驱动的区块链技术服务提供商"
 
-## Main Menu
-[[menu.main]]
-    name = "关于"
-    identifier = "about"
-    weight = 200
-    url = "/about/"
+[[params.about.sliderItem]]
+image   = "images/about/1.jpg"
+[[params.about.sliderItem]]
+image   = "images/about/2.jpg"
+[[params.about.sliderItem]]
+image   = "images/about/3.jpg"
+[[params.about.sliderItem]]
+image   = "images/about/2.jpg"
+
+
+# Service Section
+[params.service]
+enable      = true
+title       = "我们的服务"
+subtitle    = "服务清单"
+[[params.service.serviceItem]]
+# give icon(themefisher icon font), title, description
+# more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+# use delay for reveal items one by one
+icon    = "tf-strategy"
+title   = "区块链可信数据池"
+description = "Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+delay   = "0s"
+
+[[params.service.serviceItem]]
+# give icon(themefisher icon font), title, description
+# more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+# use delay for reveal items one by one
+icon    = "tf-circle-compass"
+title   = "融媒体溯源技术方案"
+description = "Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+delay   = "0.2s"
+
+[[params.service.serviceItem]]
+# give icon(themefisher icon font), title, description
+# more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+# use delay for reveal items one by one
+icon    = "tf-anchor2"
+title   = "自主可控区块链网络服务"
+description = "Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+delay   = "0.4s"
+
+
+# Call to Action Section
+[params.cta]
+enable      = false
+bg          = "images/call-to-action.jpg"
+title       = "订阅邮件列表"
+subtitle    = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+
+[params.contact]
+enable      = true
+title       = "联系我们"
+subtitle    = "请写出你的场景需求和疑问，我们将尽快联系您。"
